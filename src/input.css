@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-title {
+  font-family: Alegreya;
+}
+
+.label-text, input {
+  font-family: Bitter, serif;
+}
+
+.habit-text {
+  font-family: Merriweather;
+  font-weight: 700;
+}
+
+.input-error {
+  border-width: 3px;
+  background-color: RGB(247, 163, 153);
+  border-color: RGB(222, 92, 81);
+}
+
+.alert-error {
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--er) / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: hsl(var(--erc, var(--nc)) / var(--tw-text-opacity));
+}
+
+.alert-success {
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--su));
+  --tw-text-opacity: 1;
+  color: hsl(var(--erc, var(--nc)) / var(--tw-text-opacity));
+}
+
+.bg-error-content {
+  background-color: hsl(var(--erc))
+}
+
+.bg-primary-focus {
+  background-color: hsl(var(--pf))
+}
+
+.bg-base-300 {
+  background-color: hsl(var(--b3))
+}
+
+.bg-base-content {
+  background-color: hsl(var(--bc));
+  line-height: 1.25rem;
+  color: hsl(var(--b1));
+  text-transform: uppercase;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.table th:first-child {
+  position: static;
+  left: 0px;
+  z-index: 11;
+}
+
+.table :where(tbody th, tbody td) {
+  background-color: hsl(var(--b2))
+}
+
+.table:where(:not(.table-zebra)) :where(thead, tbody, tfoot) :where(tr:not(:last-child) :where(th, td)) {
+  border-color: hsl(var(--b3))
+}
+
+.divider:after, .divider:before {
+  background-color: hsl(var(--bc));
+}

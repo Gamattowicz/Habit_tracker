@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@800&family=Bitter&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    <title>Habit tracker</title>
+    <html data-theme="lemonade"></html>
+  </head>
+  <body>
+    <div class="my-10 text-center">
+      <p class="text-7xl font-title font-extrabold">Habit tracker</p>
+    </div>
+
+    <div class="flex items-center justify-center">
+
+
+      <div class="flex my-2 habit-name hidden">
+        <div class="form-control ml-4 mr-2">
+          <div class="flex-col">
+            <label class="label">
+              <span class="label-text">Name of the habit</span>
+            </label>
+            <div class="form-control mx-2 flex justify-end items-end h-12">
+              <span class="text-3xl habit-text text-center"></span>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="form-control mx-2 flex justify-end items-end h-full">
+              <button class="btn btn-error remove-habit-button">DELETE</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex my-2 habit-input-wrapper">
+        <div class="form-control ml-4 mr-2">
+          <div class="flex-col">
+            <label class="label">
+              <span class="label-text">Habit name</span>
+            </label>
+            <input type="text" placeholder="Enter your habit" id="userName" class="input input-bordered input-info w-full max-w-xs input-habit" required/>
+          </div>
+        </div>
+
+        <div>
+          <div class="form-control mx-2 flex justify-end items-end h-full">
+              <button class="btn submit-habit-button">ACCEPT</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex my-2">
+        <div class="form-control mx-2">
+          <label class="label">
+            <span class="label-text">Select year</span>
+          </label>
+          <select class="select select-bordered select-primary year">
+            <option disabled selected>Select year</option>
+            <option>2022</option>
+            <option>2023</option>
+            <option>2024</option>
+            <option>2025</option>
+            <option>2026</option>
+            <option>2027</option>
+            <option>2028</option>
+            <option>2029</option>
+          </select>
+        </div>
+
+        <div class="form-control mx-2">
+          <label class="label">
+            <span class="label-text">Select month</span>
+          </label>
+          <select class="select select-bordered select-primary month">
+            <option disabled selected>Select month</option>
+            <option value="0">January</option>
+            <option value="1">February</option>
+            <option value="2">March</option>
+            <option value="3">April</option>
+            <option value="4">May</option>
+            <option value="5">June</option>
+            <option value="6">July</option>
+            <option value="7">August</option>
+            <option value="8">September</option>
+            <option value="9">October</option>
+            <option value="10">November</option>
+            <option value="11">December</option>
+          </select>
+        </div>
+
+        <div>
+          <div class="form-control mx-2 flex justify-end items-end h-full">
+              <button class="btn btn-primary generate-month-button">GENERATE</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class=" flex items-center justify-center">
+      <div class="divider w-4/5 divider-base-content"></div>
+    </div>
+
+
+    <div class="flex flex-wrap ml-4 month-wrapper">
+
+    </div>
+
+</div>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
